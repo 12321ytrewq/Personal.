@@ -43,6 +43,8 @@ animations = [{
 size = Vector2(20, 14)
 
 [node name="Enemy" type="RigidBody2D"]
+contact_monitor = true
+max_contacts_reported = 1
 script = ExtResource("1_1es1k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
