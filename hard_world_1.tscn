@@ -1266,15 +1266,7 @@ scale = Vector2(12.91, 0.984399)
 
 [node name="ChangeWorld2" parent="." instance=ExtResource("4_c1w6x")]
 position = Vector2(2923, -89)
-nextLvl = "hard_world_2"
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 2886.0
-offset_top = -127.0
-offset_right = 2961.0
-offset_bottom = -104.0
-text = "Good Job!
-"
+nextLvl = "easy_world_2"
 
 [node name="Enemy7" parent="." instance=ExtResource("2_fmecy")]
 position = Vector2(256, -13)

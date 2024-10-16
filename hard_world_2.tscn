@@ -1247,6 +1247,7 @@ position = Vector2(1179, 32)
 
 [node name="ChangeWorld" parent="." instance=ExtResource("4_6yknp")]
 position = Vector2(2589, -22)
+nextLvl = "you_win"
 
 [node name="Death Zone" parent="." instance=ExtResource("5_pvbnr")]
 position = Vector2(-261, 166)

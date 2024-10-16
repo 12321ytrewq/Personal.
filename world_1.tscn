@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://kpxpjxc11p01"]
+[gd_scene load_steps=8 format=4 uid="uid://kpxpjxc11p01"]
 
 [ext_resource type="Texture2D" uid="uid://cynac3kiwc0wx" path="res://Talent-Show/phase-2.png" id="1_njhyp"]
 [ext_resource type="PackedScene" uid="uid://difq8mfbuehcm" path="res://Talent-Show/player.tscn" id="2_q2m5c"]
@@ -1205,9 +1205,6 @@ texture = ExtResource("1_njhyp")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_48frs")
 
-[sub_resource type="Theme" id="Theme_4sg8v"]
-default_font_size = 10
-
 [node name="World 1" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -1238,15 +1235,7 @@ scale = Vector2(-2.69385, 1.13965)
 position = Vector2(700, 79)
 scale = Vector2(1.59206, 1)
 
-[node name="ChangeWorld2" parent="." instance=ExtResource("5_2xgx4")]
-position = Vector2(1154, -127)
-scale = Vector2(2.32083, 1.89496)
+[node name="ChangeWorld" parent="." instance=ExtResource("5_2xgx4")]
+position = Vector2(1146, -147)
+scale = Vector2(3.0561, 2.44901)
 nextLvl = "easy_world_1"
-
-[node name="Label3" type="Label" parent="."]
-offset_left = -144.0
-offset_top = -105.0
-offset_right = -36.0
-offset_bottom = -82.0
-theme = SubResource("Theme_4sg8v")
-text = "(I reccomend this one)"
