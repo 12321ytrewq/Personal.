@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbsx3wngxdyxf"]
+
+[ext_resource type="Script" path="res://Talent-Show/change_world.gd" id="1_l7jjq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kn3hn"]
+size = Vector2(23, 50)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e6ta4"]
+
+[node name="ChangeWorld" type="Area2D"]
+script = ExtResource("1_l7jjq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 15)
+shape = SubResource("RectangleShape2D_kn3hn")
+debug_color = Color(0.571195, 0.036639, 0.618598, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.572549, 0.0352941, 0.619608, 1)
+position = Vector2(1.5, 15)
+scale = Vector2(23, 50)
+texture = SubResource("PlaceholderTexture2D_e6ta4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
